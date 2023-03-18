@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;1,200;1,800&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    color: #308D46;
+    background-color:#171717;
+}
+.navbar
+{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+nav
+{
+    text-align:right;
+    flex:1;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 13px;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    height: 100vh;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    border-radius: 100%;
+    width: 40%;
+    transition: all 0.5s;
+}
+.left{
+    text-align: left;
+}
+.btn{
+    padding: 1rem;
+}
+.btn-primary{
+    background-color: #308D46;
+    color: white;
+    border: none;
+}
+.about-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.about-col{
+    padding: 2rem;
+}
+.whatido-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.whatido-col{
+    padding: 2rem;
+}
+.skills-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: #212121;
+}
+.skills-col{
+    padding: 2rem;
+    background-color: #212121;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+input{
+    padding: 1rem;
+    width: 40%;
+}
+.but{
+    margin-top: 3rem;
+}
+.grey{
+    color: #535353;
+}
+.whatido-col{
+    background-color: #212121;
+    width: 20%;
+    word-wrap: break-word;
+}
+.grey-bg{
+    background-color: #212121;
+}
+.h{
+    margin: 25px;
+    margin-left: 100px;
+    background: #535353;
+    border: none;
+    border-radius: 10%;
+}
+.area{
+    width: 140%;
+    height: 50%;
+}
+.profile:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1103px){
+    .whatido-row,.skills-row,.about-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container{
+        height: auto;
+    }
+} 

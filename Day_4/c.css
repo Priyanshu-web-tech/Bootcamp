@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;1,200;1,800&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+.dabba1
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,12,12,0.5),rgba(12, 12, 12, 0.5)),url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.bar
+{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    width: 80px;
+    cursor: pointer;
+}
+
+nav
+{
+    text-align:right;
+    flex:1;
+    
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+button
+{
+    width: 180px;
+    color: black;
+    background: white ;
+    font-size: 12px;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.hel{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 70px;
+    color:white;
+}
+
+p{
+    color:white;
+    font: size 10px;
+    line-height: 15px;
+}
+
+.row{
+    display: flex;
+    height:80%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.mov{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 10px 15px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.m1
+{
+    background: url(./images/avatar.jpg);
+}
+.m2
+{
+    background: url(./images/black\ adam.jpg);
+}
+.m3
+{
+    background: url(./images/black_2.jpg);
+}
+.m4
+{
+    background: url(./images/vikram\ vedha.jpg);
+}
+
+.mov:hover{
+    transform: scale(1.1);
+}
+
+h5{
+    font-size: 15px;
+    color:white;
+}
+
+@media screen and (max-width: 1103px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .col{
+        flex-basis: 10%;
+    }
+    .dabba1{
+        height: auto;
+    }
+    .card-col{
+        margin-top: 2rem;
+    }
+} 
+
+@media screen and (max-width: 313px) {
+    .tr{
+        font-size: 70px;
+    }
+}

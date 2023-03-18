@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color: #74B661;
+    --green: #62AD4C;
+    --gray: #F6F7F8;
+    --yellow: #FFD200;
+    --dark: #61ad4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    color: black;
+    height: 10vh;
+
+}
+
+header .logo {
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.account i {
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+}
+
+/* 2nd section */
+
+.flex {
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.top {
+    margin-top: 10%;
+}
+
+.right,
+.left {
+    width: 50%;
+    padding: 20px;
+}
+
+.home {
+    background-color: var(--gray);
+    height: 85vh;
+}
+
+.slide{
+    width: 100%;
+    height: 70vh;
+}
+
+.slide h3{
+    color: var(--color);
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slide p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.btn1{
+    background: var(--green);
+    padding: 15px 40px;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.btn1:hover{
+    background-color: black;
+}
+
+.mtop{
+    margin-top: 20px;
+}
+
+.product .img{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.upper_img{
+    opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: 0.6s;
+}
+
+.upper_img:hover{
+    opacity: 1;
+}
+
+.heading2{
+    text-align: center;
+}
+
+.heading2::after{
+    left: 50%;
+}
+
+.product i{
+    color: var(--color);
+    font-size: 14px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+.services:hover image{
+    transform: rotateY(180deg);
+  
+}

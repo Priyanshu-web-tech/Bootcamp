@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="shortcut icon" href="./images/investment.png" type="png">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h1 class="brand-title">Portfolio</h1>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="#"><button class="btn2">Home</button></a>
+          </li>
+          <li>
+            <a href="https://github.com/Priyanshu-web-tech/Quiz-Game"><button class="btn2">Projects</button></a>
+          </li>
+          <li>
+            <a href="contact_us.html">
+              <button class="btn">Contact</button></a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1O4ta115lkyK4T-mZ6IXr-KK9Q-ugwkzt/view?usp=sharing"><button
+                class="btn">Download CV</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div>
+      <img class="profile" src="./images/man.jpg" alt="" />
+      <h1 class="heading">Hey, I'm Priyanshu Sharma!</h1>
+      <p class="tag hell">FRONTEND DEVELOPER</p>
+    </div>
+
+    <div>
+      <h1 class="heading">About</h1>
+      <p>
+        I'm a second year student at ABESEC, pursuing my Bachelor's of
+        Technology in Computer Science with specialization in DATA SCIENCE.
+        I'm well aware of some skills and programming languages like C,
+        Python, MySQL. I am very passionate about Web Development & Data
+        Science have a keen interest to learn more new technologies.
+      </p>
+    </div>
+    <div>
+      <h1 class="heading">Connect With Me</h1>
+      <div>
+        <img class="sz" src="./images/ellipse.png" alt="ellipse" />
+        <h3>Full Name-Priyanshu Sharma</h3>
+      </div>
+      <div>
+        <img class="sz" src="./images/ellipse.png" alt="ellipse" />
+        <h3>Email-priyanshusharma6666@gmail.com</h3>
+      </div>
+      <div>
+        <img class="sz" src="./images/ellipse.png" alt="ellipse" />
+        <h3>Twitter-@Priyans72532451</h3>
+      </div>
+      <div>
+        <img class="sz" src="./images/ellipse.png" alt="ellipse" />
+        <h3 class="hi">
+          Linkedin-https://www.linkedin.com/in/priyanshu-sharma-025737216/
+        </h3>
+      </div>
+    </div>
+    <div class="skills">
+      <h1 class="heading">My Skills</h1>
+      <div class="skills-row">
+        <div class="skills-col">
+          <h1 class="grey grey-bg">85%</h1>
+          <p class="green grey-bg">HTML</p>
+        </div>
+        <div class="skills-col">
+          <h1 class="grey grey-bg">60%</h1>
+          <p class="green grey-bg">CSS</p>
+        </div>
+        <div class="skills-col">
+          <h1 class="grey grey-bg">70%</h1>
+          <p class="green grey-bg">Python/C</p>
+        </div>
+        <div class="skills-col">
+          <h1 class="grey grey-bg">40%</h1>
+          <p class="green grey-bg">SQL</p>
+        </div>
+      </div>
+    </div>
+    <div class="getintouch">
+      <form action="https://formsubmit.co/priyanshusharma6666@gmail.com" method="POST">
+        <h1 class="heading">Get In Touch!</h1>
+        <fieldset class="set">
+          <div class="grid">
+            <input class="h" name="First Name" type="text" placeholder="First Name" />
+            <input class="h" name="Last Name" type="text" placeholder="Last Name" />
+            <input class="h" name="PHONE" type="number" placeholder="Phone" />
+            <input class="h" name="EMAIL" type="email" placeholder="Email" />
+            <textarea class="h" rows="2" cols="50" placeholder="Message" name="Message"></textarea>
+          </div>
+          <button class="btn btn-primary but">Submit!</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <script>
+    const toggleButton = document.getElementsByClassName("toggle-button")[0];
+    const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+    toggleButton.addEventListener("click", () => {
+      navbarLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
